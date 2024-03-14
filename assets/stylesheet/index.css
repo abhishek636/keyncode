@@ -406,7 +406,7 @@ footer{
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
     display: none;
-    height: 100vh;
+    
 }
 
 /* Style navigation menu links */
@@ -438,3 +438,5 @@ footer{
 background-color: #04AA6D;
 color: white;
 } */
+
+
