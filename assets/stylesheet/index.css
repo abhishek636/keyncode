@@ -52,8 +52,14 @@ table {
 html{
     scroll-behavior: smooth ;
 }
+section#about,section#team,section#criteria {
+    margin: 50px auto;
+}
 
 /* universal */
+img{
+    width: 100%;
+}
 
 h1{
     color: #2E2E2E;
@@ -69,14 +75,12 @@ h2{
     border-bottom-style: solid;
     border-bottom-width: 1px;
     width:fit-content;
-    margin-bottom: 50px;
 }
+
 h3{
-    margin: 50px 0;
     font-size: 22px;
     font-family: 'Artifex CF';
     line-height: 29.77px;
-    margin-bottom: 30px;
 }
 p{
     font-size: 18px;
@@ -135,10 +139,10 @@ nav>ul>li>a:hover{
 }
 /* first section */
 .margin-10{
-    margin-top: -310px;
+    margin-top: -120px;
 }
 .w-50{
-    flex-basis: 612px;
+    width: 50%;
 }
 .width-25{
     flex-basis: 23%;
@@ -146,12 +150,11 @@ nav>ul>li>a:hover{
 .w-40{
     flex-basis: 45%;
 }
-.width-height{
-    max-width: 705px;
-    max-height: 800px;
+
+.margin-left{
+    width: 564px;
+    margin-left: auto;
 }
-
-
 .nav{
     z-index: 1;
 }
@@ -191,9 +194,7 @@ nav>ul>li>a:hover{
 /* .margin-bottom{
     margin-bottom: 30px;
 } */
-#about{
-    margin-top: -100px;
-}
+
 /* section-4 */
 .partner>p{
     margin-bottom: 0px;
@@ -270,18 +271,15 @@ footer{
     margin: 50px auto;
     font-family:"Open Sans";
 }
-#team{
-    min-height: 620px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #fff;
     color: black;
+    transition: 1.5s;
+    scroll-behavior: smooth;
 }
 .sticky>nav>ul>li>a{
     color: black;
@@ -293,12 +291,7 @@ footer{
 #contact{
     margin-bottom: 0px;
 }
-#home{
-    height: 800px;
-}
-#about{
-    height: 468px;
-}
+
 /* media query */
 @media only screen 
   and (min-device-width: 768px) 
@@ -313,6 +306,16 @@ footer{
 }
 
 @media only screen and (max-device-width: 480px){
+    h1{
+        margin: 40px auto;
+    }
+    .margin-left{
+        width: 100%;
+        padding: 0 17px;
+    }
+    .w-50{
+        width: 100%;
+    }
     #about,#home,#team,#criteria,#contact{
         height: 100%;
     }
@@ -396,17 +399,15 @@ footer{
 }
 
 
-
-/* Style the navigation menu */
+w-50
 .topnav {
     overflow: hidden;
     background-color: #fff;
 }
-  
+
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
     display: none;
-    
 }
 
 /* Style navigation menu links */
@@ -433,10 +434,3 @@ footer{
 .tick>div>p{
     margin-bottom: 12px;
 }
-/* Style the active link (or home/logo) */
-/* .active {
-background-color: #04AA6D;
-color: white;
-} */
-
-
